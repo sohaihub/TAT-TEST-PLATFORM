@@ -94,1203 +94,1203 @@ st.markdown("""
 TEST_QUESTIONS = [
     {
         "id": 1,
-        "question": "What is the primary function of the TAT Resume Analyzer?",
+        "question": "What is the primary purpose of the TAT Resume Analyzer?",
         "options": [
-            "Conducts video interviews",
-            "Scores resumes based on industry standards",
             "Generates job descriptions",
-            "Manages candidate databases"
+            "Manages candidate email notifications",
+            "Scores resumes based on industry standards",
+            "Conducts AI-based interviews"
         ],
-        "correct_answer": 1,
-        "explanation": "The Resume Analyzer analyzes resumes against industry standards and scores them based on adherence, with non-standard resumes receiving lower scores (Hyrdragon.pdf, Page 1)."
+        "correct_answer": 2,
+        "explanation": "The Resume Analyzer scores resumes based on adherence to industry standards, with non-standard resumes receiving lower scores (Hyrdragon.pdf, Page 1)."
     },
     {
         "id": 2,
-        "question": "Which feature of TAT's Smart Proctoring detects unauthorized individuals during assessments?",
+        "question": "Which Smart Proctoring feature detects noise during assessments?",
         "options": [
             "Audio detection",
             "Eyeball tracking",
-            "Multi person & object detection",
-            "Tab switching deactivation"
+            "Tab switching deactivation",
+            "Multi person detection"
         ],
-        "correct_answer": 2,
-        "explanation": "Multi person & object detection is a Smart Proctoring feature that identifies unauthorized individuals or objects during assessments (Hyrdragon.pdf, Page 1)."
+        "correct_answer": 0,
+        "explanation": "Audio detection is a Smart Proctoring feature that identifies noise during assessments (Hyrdragon.pdf, Page 1)."
     },
     {
         "id": 3,
-        "question": "What is the timeline for Sprint 3 in the TAT MVP development?",
+        "question": "What does the Matchmaker feature in TAT provide?",
         "options": [
-            "Sep 1 - Sep 14",
-            "Sep 15 - Sep 28",
-            "Sep 29 - Oct 12",
-            "Oct 13 - Nov 9"
+            "Automated question generation",
+            "Real-time coding feedback",
+            "Candidate video interview scheduling",
+            "Suitability score for resumes against job descriptions"
         ],
-        "correct_answer": 2,
-        "explanation": "Sprint 3, focused on developing and integrating the Question Generator, is scheduled from Sep 29 - Oct 12 (PRD TAT.ai, Page 12)."
-    },
-    {
-        "id": 4,
-        "question": "Which backend language is primarily used in the TAT tech stack?",
-        "options": [
-            "Java",
-            "Python",
-            "Ruby",
-            "PHP"
-        ],
-        "correct_answer": 1,
-        "explanation": "Python is the primary backend language for TAT, used with frameworks like Django or Flask (PRD TAT.ai, Page 9)."
-    },
-    {
-        "id": 5,
-        "question": "What is the purpose of the Matchmaker feature in TAT?",
-        "options": [
-            "Generates assessment questions",
-            "Compares job descriptions with resumes",
-            "Conducts AI-supported video interviews",
-            "Provides real-time feedback"
-        ],
-        "correct_answer": 1,
+        "correct_answer": 3,
         "explanation": "The Matchmaker compares job descriptions with resumes and provides a suitability score (Hyrdragon.pdf, Page 1)."
     },
     {
+        "id": 4,
+        "question": "How many types of assessments are included in TAT's Skill Testing?",
+        "options": [
+            "6",
+            "5",
+            "3",
+            "4"
+        ],
+        "correct_answer": 1,
+        "explanation": "Skill Testing includes 5 types of assessments: MCQ, technical code, syntax-based code, video conferencing, and others (Hyrdragon.pdf, Page 1)."
+    },
+    {
+        "id": 5,
+        "question": "What does the AI-Powered Assessment Feedback provide?",
+        "options": [
+            "Proctoring alerts",
+            "Job role creation",
+            "Resume formatting",
+            "Detailed candidate performance metrics"
+        ],
+        "correct_answer": 3,
+        "explanation": "AI-Powered Assessment Feedback offers detailed feedback on candidate performance with metrics and scores (Hyrdragon.pdf, Page 1)."
+    },
+    {
         "id": 6,
-        "question": "Which NLP library is explicitly mentioned for TAT's NLP tasks?",
+        "question": "Which Smart Proctoring feature prevents candidates from leaving the test window?",
         "options": [
-            "NLTK",
-            "Gensim",
-            "TextBlob",
-            "CoreNLP"
-        ],
-        "correct_answer": 0,
-        "explanation": "SpaCy and NLTK are mentioned for NLP tasks in the TAT tech stack (PRD TAT.ai, Page 10)."
-    },
-    {
-        "id": 7,
-        "question": "What is the file size limit for CSV uploads when inviting candidates?",
-        "options": [
-            "2MB",
-            "3MB",
-            "5MB",
-            "10MB"
-        ],
-        "correct_answer": 2,
-        "explanation": "The CSV upload limit for inviting candidates is 5MB, supporting up to 1200 applicants (Hyrdragon.pdf, Page 4)."
-    },
-    {
-        "id": 8,
-        "question": "Which cloud service is NOT listed as a potential hosting provider for TAT?",
-        "options": [
-            "AWS",
-            "Google Cloud Platform",
-            "Microsoft Azure",
-            "Oracle Cloud"
-        ],
-        "correct_answer": 3,
-        "explanation": "AWS, Google Cloud Platform, and Microsoft Azure are listed as potential cloud providers, but Oracle Cloud is not (PRD TAT.ai, Page 10)."
-    },
-    {
-        "id": 9,
-        "question": "What feature allows recruiters to manually input assessment questions?",
-        "options": [
-            "Dynamic MCQs",
-            "Customizable Assessment Options",
-            "AI-Supported Video Interviewing",
-            "Smart Proctoring"
-        ],
-        "correct_answer": 1,
-        "explanation": "Customizable Assessment Options allow recruiters to manually input questions for assessments (Hyrdragon.pdf, Page 2)."
-    },
-    {
-        "id": 10,
-        "question": "What is the goal of TAT's Evaluator System regarding fairness?",
-        "options": [
-            "Automated scheduling",
-            "Ensure fairness and unbiased evaluations",
-            "Real-time feedback delivery",
-            "Resume data extraction"
-        ],
-        "correct_answer": 1,
-        "explanation": "The Evaluator System ensures fairness and unbiased evaluations through features like fairness and bias control (PRD TAT.ai, Page 8)."
-    },
-    {
-        "id": 11,
-        "question": "What is the maximum file size for resume uploads in TAT?",
-        "options": [
-            "2MB",
-            "3MB",
-            "5MB",
-            "10MB"
-        ],
-        "correct_answer": 1,
-        "explanation": "The maximum file size for resume uploads (PDF, DOC, DOCX) is 3MB, supporting up to 1000 files (Hyrdragon.pdf, Page 4)."
-    },
-    {
-        "id": 12,
-        "question": "Which sprint focuses on integrating the LMS Library data?",
-        "options": [
-            "Sprint 1",
-            "Sprint 2",
-            "Sprint 3",
-            "Sprint 4"
-        ],
-        "correct_answer": 1,
-        "explanation": "Sprint 2 (Sep 15 - Sep 28) focuses on integrating the LMS Library data provided by Raj's team (PRD TAT.ai, Page 12)."
-    },
-    {
-        "id": 13,
-        "question": "Which database is NOT mentioned for TAT's tech stack?",
-        "options": [
-            "PostgreSQL",
-            "MySQL",
-            "MongoDB",
-            "Oracle Database"
-        ],
-        "correct_answer": 3,
-        "explanation": "PostgreSQL, MySQL, and MongoDB are mentioned as database options, but Oracle Database is not (PRD TAT.ai, Page 9)."
-    },
-    {
-        "id": 14,
-        "question": "What feature of TAT shuffles multiple-choice questions for each candidate?",
-        "options": [
-            "Smart Proctoring",
-            "Dynamic MCQs",
-            "AI-Supported Video Interviewing",
-            "Customizable Assessment Options"
-        ],
-        "correct_answer": 1,
-        "explanation": "Dynamic MCQs shuffle multiple-choice questions for each candidate to ensure varied assessments (Hyrdragon.pdf, Page 2)."
-    },
-    {
-        "id": 15,
-        "question": "What is the duration of Sprint 4 in the TAT MVP roadmap?",
-        "options": [
-            "Sep 29 - Oct 12",
-            "Oct 13 - Nov 9",
-            "Nov 10 - Nov 23",
-            "Nov 24 - Dec 7"
-        ],
-        "correct_answer": 1,
-        "explanation": "Sprint 4, focused on NLP and Evaluator System development, runs from Oct 13 - Nov 9 (PRD TAT.ai, Page 12)."
-    },
-    {
-        "id": 16,
-        "question": "Which of the following is a goal of the TAT system?",
-        "options": [
-            "Increase candidate onboarding time",
-            "Reduce time-to-hire",
-            "Limit candidate feedback",
-            "Manual interview scheduling"
-        ],
-        "correct_answer": 1,
-        "explanation": "A key goal of TAT is to reduce time-to-hire by automating the technical interview process (PRD TAT.ai, Page 6)."
-    },
-    {
-        "id": 17,
-        "question": "What type of authentication is used in the TAT system?",
-        "options": [
-            "SAML",
-            "OAuth 2.0",
-            "Kerberos",
-            "Basic Authentication"
-        ],
-        "correct_answer": 1,
-        "explanation": "The TAT tech stack uses OAuth 2.0 and JWT for authentication (PRD TAT.ai, Page 11)."
-    },
-    {
-        "id": 18,
-        "question": "What is the purpose of the Skill Testing feature in TAT?",
-        "options": [
-            "Resume scoring",
-            "Job description creation",
-            "Assessing various candidate skills",
-            "Email notification management"
-        ],
-        "correct_answer": 2,
-        "explanation": "Skill Testing includes assessments like MCQs, technical coding, and video conferencing to evaluate candidate skills (Hyrdragon.pdf, Page 1)."
-    },
-    {
-        "id": 19,
-        "question": "Which tool is used for frontend testing in the TAT tech stack?",
-        "options": [
-            "PyTest",
-            "Jest",
-            "Mocha",
-            "Selenium"
-        ],
-        "correct_answer": 1,
-        "explanation": "Jest is specified for frontend testing in the TAT tech stack (PRD TAT.ai, Page 9)."
-    },
-    {
-        "id": 20,
-        "question": "What happens if Raj's LMS Library is not ready by Sep 14?",
-        "options": [
-            "Delay the entire project",
-            "Use a dummy dataset",
-            "Skip LMS integration",
-            "Outsource the LMS"
-        ],
-        "correct_answer": 1,
-        "explanation": "If Raj's LMS is not ready by Sep 14, a dummy dataset will be used for Sprint 2 (PRD TAT.ai, Page 12)."
-    },
-    {
-        "id": 21,
-        "question": "Which round type is NOT currently available in TAT?",
-        "options": [
-            "MCQ",
-            "Full Stack Developer",
-            "Syntax Based Programming",
-            "AI Bot Interview"
-        ],
-        "correct_answer": 3,
-        "explanation": "The AI Bot Interview round is listed as 'coming soon' and not currently available (Hyrdragon.pdf, Page 3)."
-    },
-    {
-        "id": 22,
-        "question": "What is the focus of Release 1 in the TAT release plan?",
-        "options": [
-            "NLP and Evaluator System",
-            "Resume Analyser and Question Generator",
-            "UI/UX Finalization",
-            "Post-Launch Enhancements"
-        ],
-        "correct_answer": 1,
-        "explanation": "Release 1 (Nov 10-17, 2024) includes Resume Analyser, LMS Library Integration, and Question Generator (PRD TAT.ai, Page 3)."
-    },
-    {
-        "id": 23,
-        "question": "Which framework is used for backend development in TAT?",
-        "options": [
-            "Spring",
-            "Django",
-            "Laravel",
-            "Ruby on Rails"
-        ],
-        "correct_answer": 1,
-        "explanation": "Django or Flask is used for backend development in Python (PRD TAT.ai, Page 9)."
-    },
-    {
-        "id": 24,
-        "question": "What does the Smart Proctoring feature deactivate to prevent cheating?",
-        "options": [
-            "Audio input",
-            "Tab switching and Esc option",
-            "Video feed",
-            "Keyboard shortcuts"
+            "Face mismatch detection",
+            "Deactivate tab switching and Esc option",
+            "Multi person detection",
+            "Audio detection"
         ],
         "correct_answer": 1,
         "explanation": "Smart Proctoring deactivates tab switching and the Esc option to prevent cheating (Hyrdragon.pdf, Page 1)."
     },
     {
-        "id": 25,
-        "question": "When is the TAT beta launch scheduled?",
+        "id": 7,
+        "question": "What inputs are used for Automated Question Generation in TAT?",
         "options": [
-            "Sep 29 - Oct 12",
-            "Oct 13 - Nov 9",
-            "Nov 10 - Nov 23",
-            "Dec 8 - Dec 15"
+            "Topics, number of questions, and difficulty levels",
+            "Candidate emails",
+            "Resume scores",
+            "Job salary ranges"
+        ],
+        "correct_answer": 0,
+        "explanation": "Automated Question Generation uses inputs like topics, number of questions, and difficulty levels (Hyrdragon.pdf, Page 2)."
+    },
+    {
+        "id": 8,
+        "question": "What is the role of the AI bot in AI-Supported Video Interviewing?",
+        "options": [
+            "Manages candidate invitations",
+            "Scores resumes",
+            "Conducts interviews when needed",
+            "Generates job descriptions"
         ],
         "correct_answer": 2,
-        "explanation": "The beta launch is part of Sprint 5, scheduled for Nov 10 - Nov 23 (PRD TAT.ai, Page 13)."
+        "explanation": "The AI bot can conduct interviews during AI-Supported Video Interviewing when needed (Hyrdragon.pdf, Page 2)."
+    },
+    {
+        "id": 9,
+        "question": "What does the Dynamic MCQs feature ensure?",
+        "options": [
+            "No time limits for questions",
+            "Shuffled questions for each candidate",
+            "Fixed questions for all candidates",
+            "Manual question input only"
+        ],
+        "correct_answer": 1,
+        "explanation": "Dynamic MCQs shuffle multiple-choice questions for each candidate (Hyrdragon.pdf, Page 2)."
+    },
+    {
+        "id": 10,
+        "question": "What can recruiters do with Customizable Assessment Options?",
+        "options": [
+            "Set candidate salaries",
+            "Disable proctoring",
+            "Upload candidate resumes",
+            "Manually input assessment questions"
+        ],
+        "correct_answer": 3,
+        "explanation": "Customizable Assessment Options allow recruiters to manually input questions for assessments (Hyrdragon.pdf, Page 2)."
+    },
+    {
+        "id": 11,
+        "question": "What login option is available on the TAT recruiter login page?",
+        "options": [
+            "Gmail login",
+            "LinkedIn login",
+            "Facebook login",
+            "Twitter login"
+        ],
+        "correct_answer": 0,
+        "explanation": "The recruiter login page supports Gmail login in addition to email and password (Hyrdragon.pdf, Page 2)."
+    },
+    {
+        "id": 12,
+        "question": "Which insight is available on the TAT recruiter dashboard?",
+        "options": [
+            "Proctoring violation logs",
+            "Email insights (sent, responded, unread)",
+            "Candidate social media profiles",
+            "Job market trends"
+        ],
+        "correct_answer": 1,
+        "explanation": "The dashboard provides email insights like sent, responded, and unread statuses (Hyrdragon.pdf, Page 2)."
+    },
+    {
+        "id": 13,
+        "question": "What is displayed in the TAT recruiter sidebar?",
+        "options": [
+            "Proctoring settings",
+            "Candidate resumes",
+            "Jobs and insights",
+            "AI question templates"
+        ],
+        "correct_answer": 2,
+        "explanation": "The sidebar displays jobs (active, inactive, draft, archive) and insights like resume score and email status (Hyrdragon.pdf, Page 2)."
+    },
+    {
+        "id": 14,
+        "question": "What can recruiters view in the notifications section of the TAT dashboard?",
+        "options": [
+            "Candidate salary expectations",
+            "Weekly activity and test completions",
+            "Job description templates",
+            "Proctoring violation alerts"
+        ],
+        "correct_answer": 1,
+        "explanation": "Notifications show weekly activity and test completion or candidate information (Hyrdragon.pdf, Page 2)."
+    },
+    {
+        "id": 15,
+        "question": "Which stage is NOT part of the TAT candidate journey status?",
+        "options": [
+            "Onboarded",
+            "Applications",
+            "Screened",
+            "Shortlisted"
+        ],
+        "correct_answer": 0,
+        "explanation": "The candidate journey includes Applications, Screened, Test completed, and Shortlisted, but not Onboarded (Hyrdragon.pdf, Page 2)."
+    },
+    {
+        "id": 16,
+        "question": "What is included in the TAT applicants distribution status?",
+        "options": [
+            "Candidate locations and salaries",
+            "Total applicants, Yet to respond, Responded, Shortlisted",
+            "Proctoring violation counts",
+            "Resume scores only"
+        ],
+        "correct_answer": 1,
+        "explanation": "Applicants distribution status includes Total applicants, Yet to respond, Responded, and Shortlisted (Hyrdragon.pdf, Page 2)."
+    },
+    {
+        "id": 17,
+        "question": "What does the TAT test performance distribution display?",
+        "options": [
+            "Assessment data (e.g., 70% score viewed)",
+            "Candidate email responses",
+            "Job salary ranges",
+            "Proctoring settings"
+        ],
+        "correct_answer": 0,
+        "explanation": "Test performance distribution shows assessment data, such as 70% score viewed (Hyrdragon.pdf, Page 2)."
+    },
+    {
+        "id": 18,
+        "question": "What is required to create a job in TAT?",
+        "options": [
+            "Job role, location, salary, and job description",
+            "Candidate resumes",
+            "Proctoring thresholds",
+            "AI-generated questions"
+        ],
+        "correct_answer": 0,
+        "explanation": "Creating a job requires uploading details like job role, location, salary, and job description (Hyrdragon.pdf, Page 3)."
+    },
+    {
+        "id": 19,
+        "question": "How many assessment rounds are currently live in TAT?",
+        "options": [
+            "5",
+            "3",
+            "4",
+            "6"
+        ],
+        "correct_answer": 2,
+        "explanation": "Four rounds are live (MCQ, Full Stack Developer, Syntax Based Programming, VC), with AI Bot Interview launching soon (Hyrdragon.pdf, Page 3)."
+    },
+    {
+        "id": 20,
+        "question": "Which round type is listed as 'coming soon' in TAT?",
+        "options": [
+            "Video Conferencing",
+            "MCQ",
+            "Full Stack Developer",
+            "AI Bot Interview"
+        ],
+        "correct_answer": 3,
+        "explanation": "The AI Bot Interview round is listed as 'coming soon' (Hyrdragon.pdf, Page 3)."
+    },
+    {
+        "id": 21,
+        "question": "What option is available for MCQ question selection in TAT?",
+        "options": [
+            "Proctoring-based selection",
+            "AI generator only",
+            "Manual only",
+            "AI generator, manual, and question bank"
+        ],
+        "correct_answer": 3,
+        "explanation": "MCQ questions can be selected via AI generator, manual input, or question bank options (Hyrdragon.pdf, Page 3)."
+    },
+    {
+        "id": 22,
+        "question": "What does the Full Stack Developer round in TAT involve?",
+        "options": [
+            "Video interviews",
+            "Resume scoring",
+            "Technical coding with development tasks",
+            "Proctoring configuration"
+        ],
+        "correct_answer": 2,
+        "explanation": "The Full Stack Developer round involves technical coding with development tasks and problem statements (Hyrdragon.pdf, Page 3)."
+    },
+    {
+        "id": 23,
+        "question": "What is the focus of the Syntax Based Programming round in TAT?",
+        "options": [
+            "AI question generation",
+            "Test case-based coding programs",
+            "Resume analysis",
+            "HR interviews"
+        ],
+        "correct_answer": 1,
+        "explanation": "Syntax Based Programming involves test case-based coding programs (Hyrdragon.pdf, Page 3)."
+    },
+    {
+        "id": 24,
+        "question": "What is the purpose of the Video Conferencing (VC) round in TAT?",
+        "options": [
+            "Proctoring setup",
+            "Technical coding",
+            "HR or Management interviews",
+            "Resume scoring"
+        ],
+        "correct_answer": 2,
+        "explanation": "The VC round is used for HR or Management interviews (Hyrdragon.pdf, Page 3)."
+    },
+    {
+        "id": 25,
+        "question": "Which configuration model is NOT part of TAT job setup?",
+        "options": [
+            "Smart Proctoring",
+            "Candidate Salary Negotiation",
+            "Shortlisting Option",
+            "Activation Date and Time"
+        ],
+        "correct_answer": 1,
+        "explanation": "Job setup includes Smart Proctoring, Shortlisting Option, Activation Date and Time, and Deadline, but not Salary Negotiation (Hyrdragon.pdf, Page 3)."
     },
     {
         "id": 26,
-        "question": "Which of the following is a use case for TAT?",
+        "question": "What does the Smart Proctoring anti-cheating toggle allow?",
         "options": [
-            "Payroll management",
-            "Initial technical screening",
-            "Employee training",
-            "Project management"
+            "Enabling/disabling proctoring",
+            "Disabling all proctoring features",
+            "Setting question difficulty",
+            "Uploading candidate resumes"
         ],
-        "correct_answer": 1,
-        "explanation": "Initial technical screening is a key use case for TAT, filtering unqualified candidates (PRD TAT.ai, Page 6)."
+        "correct_answer": 0,
+        "explanation": "The anti-cheating toggle allows enabling or disabling Smart Proctoring features (Hyrdragon.pdf, Page 3)."
     },
     {
         "id": 27,
-        "question": "What is the maximum number of questions allowed for a coding round?",
+        "question": "What is the purpose of the Shortlisting Option in TAT?",
         "options": [
-            "5",
+            "Resume formatting",
+            "Generating questions",
+            "Manual or automated threshold-based shortlisting",
+            "Proctoring alerts"
+        ],
+        "correct_answer": 2,
+        "explanation": "The Shortlisting Option supports manual or automated threshold-based shortlisting, e.g., 70% (Hyrdragon.pdf, Page 3)."
+    },
+    {
+        "id": 28,
+        "question": "What is an example of a topic selectable for TAT assessments?",
+        "options": [
+            "Email drafting",
+            "Salary negotiation",
+            "Python",
+            "Job location"
+        ],
+        "correct_answer": 2,
+        "explanation": "Topics like Python, PHP, C++, and Azure can be selected for assessments (Hyrdragon.pdf, Page 3)."
+    },
+    {
+        "id": 29,
+        "question": "What is the maximum file size for CSV uploads in TAT?",
+        "options": [
+            "10MB",
+            "2MB",
+            "5MB",
+            "3MB"
+        ],
+        "correct_answer": 2,
+        "explanation": "The maximum file size for CSV uploads is 5MB, supporting up to 1200 applicants (Hyrdragon.pdf, Page 4)."
+    },
+    {
+        "id": 30,
+        "question": "How many applicants can a 5MB CSV upload support in TAT?",
+        "options": [
+            "1500",
+            "500",
+            "1200",
+            "1000"
+        ],
+        "correct_answer": 2,
+        "explanation": "A 5MB CSV upload can support up to 1200 applicants (Hyrdragon.pdf, Page 4)."
+    },
+    {
+        "id": 31,
+        "question": "What file formats are supported for resume uploads in TAT?",
+        "options": [
+            "DOC only",
+            "PDF, DOC, DOCX",
+            "PDF only",
+            "TXT, PDF, DOC"
+        ],
+        "correct_answer": 1,
+        "explanation": "Resume uploads support PDF, DOC, and DOCX formats (Hyrdragon.pdf, Page 4)."
+    },
+    {
+        "id": 32,
+        "question": "What is the maximum file size for resume uploads in TAT?",
+        "options": [
+            "2MB",
+            "5MB",
+            "3MB",
+            "10MB"
+        ],
+        "correct_answer": 2,
+        "explanation": "The maximum file size for resume uploads is 3MB, supporting up to 1000 files (Hyrdragon.pdf, Page 4)."
+    },
+    {
+        "id": 33,
+        "question": "What is analyzed during resume uploads in TAT?",
+        "options": [
+            "Job descriptions",
+            "AI analyzer and Matchmaker scores",
+            "Candidate emails",
+            "Proctoring settings"
+        ],
+        "correct_answer": 1,
+        "explanation": "Resume uploads are processed by the AI analyzer and Matchmaker, with scores viewed (Hyrdragon.pdf, Page 4)."
+    },
+    {
+        "id": 34,
+        "question": "What details are included in the TAT application form configuration?",
+        "options": [
+            "Only resume upload",
+            "Name, email, location, experience, etc.",
+            "Only email and name",
+            "Only job description"
+        ],
+        "correct_answer": 1,
+        "explanation": "The application form includes name, email, location, current job, position, company, experience, etc. (Hyrdragon.pdf, Page 4)."
+    },
+    {
+        "id": 35,
+        "question": "What happens after a candidate submits an application form in TAT?",
+        "options": [
+            "Recruiter review with 'We will review and get back' message",
+            "Immediate shortlisting",
+            "Automatic test assignment",
+            "Resume deletion"
+        ],
+        "correct_answer": 0,
+        "explanation": "After submission, candidates see 'We will review and get back to you soon,' and recruiters review the form (Hyrdragon.pdf, Page 4)."
+    },
+    {
+        "id": 36,
+        "question": "Where do candidate test results appear in TAT?",
+        "options": [
+            "Email notifications only",
+            "Recruiter dashboard",
+            "Candidate login page",
+            "Job description page"
+        ],
+        "correct_answer": 1,
+        "explanation": "Test results appear on the recruiter dashboard after candidate completion (Hyrdragon.pdf, Page 4)."
+    },
+    {
+        "id": 37,
+        "question": "What metrics are included in TAT’s AI feedback for assessments?",
+        "options": [
+            "Accuracy, time management, difficulty level, knowledge diversity",
+            "Salary expectations",
+            "Job location preferences",
+            "Resume formatting"
+        ],
+        "correct_answer": 0,
+        "explanation": "AI feedback includes metrics like accuracy, time management, difficulty level performance, and knowledge diversity (Hyrdragon.pdf, Page 4)."
+    },
+    {
+        "id": 38,
+        "question": "What decision options are available to recruiters after reviewing TAT results?",
+        "options": [
+            "Hired, Fired, Pending",
+            "Selected, Waiting, Rejected",
+            "Approved, Denied, Archived",
+            "Shortlisted, Ignored, Deleted"
+        ],
+        "correct_answer": 1,
+        "explanation": "Recruiters can mark candidates as Selected, Waiting, or Rejected based on results (Hyrdragon.pdf, Page 4)."
+    },
+    {
+        "id": 39,
+        "question": "When is an email sent to candidates in TAT based on results?",
+        "options": [
+            "For all candidates automatically",
+            "For rejected candidates with manual send option",
+            "Only for shortlisted candidates",
+            "Never sent"
+        ],
+        "correct_answer": 1,
+        "explanation": "Emails are sent for rejected candidates with a manual send checkbox, but not for waiting or shortlisted (Hyrdragon.pdf, Page 4)."
+    },
+    {
+        "id": 40,
+        "question": "What appears on the TAT report page?",
+        "options": [
+            "Attended candidate list and updated status",
+            "Job descriptions",
+            "Proctoring violation logs",
+            "Resume templates"
+        ],
+        "correct_answer": 0,
+        "explanation": "The report page shows the attended candidate list and updated status (Hyrdragon.pdf, Page 4)."
+    },
+    {
+        "id": 41,
+        "question": "What is required for a candidate to sign up in TAT?",
+        "options": [
+            "Name, mobile number, resume upload for Gmail login",
+            "Job description",
+            "Proctoring settings",
+            "Salary details"
+        ],
+        "correct_answer": 0,
+        "explanation": "For Gmail login, candidates must provide name, mobile number, and resume upload (Hyrdragon.pdf, Page 5)."
+    },
+    {
+        "id": 42,
+        "question": "What does the TAT assessment guideline screen display?",
+        "options": [
+            "Job salary details",
+            "Timelines, proctoring, and marking information",
+            "Resume scores",
+            "Candidate emails"
+        ],
+        "correct_answer": 1,
+        "explanation": "The assessment guideline screen shows timelines, proctoring information, and marking details (Hyrdragon.pdf, Page 5)."
+    },
+    {
+        "id": 43,
+        "question": "What action starts a TAT assessment for candidates?",
+        "options": [
+            "Uploading a resume",
+            "Selecting a job role",
+            "Typing 'START'",
+            "Setting proctoring options"
+        ],
+        "correct_answer": 2,
+        "explanation": "Candidates type 'START' to begin the test (Hyrdragon.pdf, Page 5)."
+    },
+    {
+        "id": 44,
+        "question": "What appears on the screen during a TAT assessment for violation purposes?",
+        "options": [
+            "Resume score",
+            "Gmail watermark",
+            "Job description",
+            "Proctoring settings"
+        ],
+        "correct_answer": 1,
+        "explanation": "A Gmail watermark appears on the screen for violation purposes (Hyrdragon.pdf, Page 5)."
+    },
+    {
+        "id": 45,
+        "question": "What permissions must candidates grant during a TAT assessment?",
+        "options": [
+            "Email access",
+            "Job description editing",
+            "Camera, photo capture, and microphone access",
+            "Resume deletion"
+        ],
+        "correct_answer": 2,
+        "explanation": "Candidates must allow camera access, photo capture, and microphone access (Hyrdragon.pdf, Page 5)."
+    },
+    {
+        "id": 46,
+        "question": "When does TAT’s Smart Proctoring start during an assessment?",
+        "options": [
+            "After resume upload",
+            "After test completion",
+            "When the test begins",
+            "During job creation"
+        ],
+        "correct_answer": 2,
+        "explanation": "Smart Proctoring starts when the test begins (Hyrdragon.pdf, Page 5)."
+    },
+    {
+        "id": 47,
+        "question": "What alerts candidates in the last moments of a TAT assessment?",
+        "options": [
+            "Resume score update",
+            "Beep sound before 5 seconds",
+            "Email notification",
+            "Proctoring violation alert"
+        ],
+        "correct_answer": 1,
+        "explanation": "A beep sound alerts candidates before 5 seconds of the assessment’s end (Hyrdragon.pdf, Page 5)."
+    },
+    {
+        "id": 48,
+        "question": "What can candidates do after completing a TAT assessment?",
+        "options": [
+            "Set proctoring thresholds",
+            "Edit job descriptions",
+            "Provide ratings and feedback",
+            "Delete their resumes"
+        ],
+        "correct_answer": 2,
+        "explanation": "Candidates can provide ratings and feedback about their experience after completing the assessment (Hyrdragon.pdf, Page 5)."
+    },
+    {
+        "id": 49,
+        "question": "How are TAT assessment results communicated to candidates?",
+        "options": [
+            "Through proctoring logs",
+            "Via recruiter email",
+            "On the candidate login page",
+            "In job descriptions"
+        ],
+        "correct_answer": 1,
+        "explanation": "Assessment results are sent to candidates via email by the recruiter (Hyrdragon.pdf, Page 5)."
+    },
+    {
+        "id": 50,
+        "question": "What is the primary goal of TAT for recruiters?",
+        "options": [
+            "Simplify technical candidate evaluation",
+            "Increase hiring costs",
+            "Manage employee onboarding",
+            "Create job advertisements"
+        ],
+        "correct_answer": 0,
+        "explanation": "TAT simplifies the hiring process by providing accurate, skill-based assessments for technical candidates (Hyrdragon.pdf, Page 1)."
+    },
+    {
+        "id": 51,
+        "question": "What feature of the TAT IDE supports coding assessments?",
+        "options": [
+            "Job description creation",
+            "Compiling and debugging code",
+            "Resume scoring",
+            "Email notifications"
+        ],
+        "correct_answer": 1,
+        "explanation": "The inbuilt IDE supports compiling and debugging code for real-time coding assessments (Hyrdragon.pdf, Page 1)."
+    },
+    {
+        "id": 52,
+        "question": "Which Smart Proctoring feature verifies candidate identity?",
+        "options": [
+            "Tab switching deactivation",
+            "Candidate ID verification",
+            "Audio detection",
+            "Eyeball tracking"
+        ],
+        "correct_answer": 1,
+        "explanation": "Smart Proctoring includes candidate ID verification to ensure identity (Hyrdragon.pdf, Page 1)."
+    },
+    {
+        "id": 53,
+        "question": "What does the AI-Supported Video Interviewing feature display?",
+        "options": [
+            "AI-processed questions",
+            "Resume scores",
+            "Proctoring alerts",
+            "Job salary details"
+        ],
+        "correct_answer": 0,
+        "explanation": "AI-Supported Video Interviewing displays AI-processed questions during interviews (Hyrdragon.pdf, Page 2)."
+    },
+    {
+        "id": 54,
+        "question": "What is the maximum number of questions allowed in a TAT coding round?",
+        "options": [
             "10",
+            "5",
             "15",
             "20"
         ],
         "correct_answer": 1,
-        "explanation": "The maximum number of questions for a coding round is 10 (Hyrdragon.pdf, Page 15)."
-    },
-    {
-        "id": 28,
-        "question": "Which library is used for data manipulation in the TAT backend?",
-        "options": [
-            "Pandas",
-            "Matplotlib",
-            "Seaborn",
-            "SciPy"
-        ],
-        "correct_answer": 0,
-        "explanation": "Pandas is specified for data manipulation and analysis in the TAT backend (PRD TAT.ai, Page 9)."
-    },
-    {
-        "id": 29,
-        "question": "What is included in the candidate application form configuration?",
-        "options": [
-            "Only email and name",
-            "Name, email, location, experience, etc.",
-            "Only resume upload",
-            "Only job description"
-        ],
-        "correct_answer": 1,
-        "explanation": "The application form includes details like name, email, location, current job, position, company, and experience (Hyrdragon.pdf, Page 4)."
-    },
-    {
-        "id": 30,
-        "question": "Which sprint involves finalizing the UI/UX design?",
-        "options": [
-            "Sprint 3",
-            "Sprint 4",
-            "Sprint 5",
-            "Sprint 6"
-        ],
-        "correct_answer": 3,
-        "explanation": "Sprint 6 (Nov 24 - Dec 7) focuses on finalizing UI/UX design and integration (PRD TAT.ai, Page 13)."
-    },
-    {
-        "id": 31,
-        "question": "What is the purpose of the AI-Powered Assessment Feedback in TAT?",
-        "options": [
-            "Job description creation",
-            "Detailed candidate performance feedback",
-            "Resume extraction",
-            "Question shuffling"
-        ],
-        "correct_answer": 1,
-        "explanation": "AI-Powered Assessment Feedback provides detailed feedback on candidate performance with metrics and scores (Hyrdragon.pdf, Page 1)."
-    },
-    {
-        "id": 32,
-        "question": "Which monitoring tool is mentioned in the TAT tech stack?",
-        "options": [
-            "Nagios",
-            "Prometheus",
-            "Zabbix",
-            "Nagios"
-        ],
-        "correct_answer": 1,
-        "explanation": "Prometheus or Grafana is mentioned for performance monitoring in the TAT tech stack (PRD TAT.ai, Page 11)."
-    },
-    {
-        "id": 33,
-        "question": "What is the purpose of the Skill Gap Analysis in TAT?",
-        "options": [
-            "Scheduling interviews",
-            "Identifying candidate skill deficiencies",
-            "Generating job descriptions",
-            "Tracking candidate progress"
-        ],
-        "correct_answer": 1,
-        "explanation": "Skill Gap Analysis identifies and evaluates candidates' current skill levels and highlights areas needing improvement (PRD TAT.ai, Page 4)."
-    },
-    {
-        "id": 34,
-        "question": "Which of the following is a component of TAT's Evaluator System?",
-        "options": [
-            "Resume upload",
-            "Code editor integration",
-            "Job posting",
-            "Email notifications"
-        ],
-        "correct_answer": 1,
-        "explanation": "The Evaluator System includes code editor/IDE integration for coding assessments (PRD TAT.ai, Page 8)."
-    },
-    {
-        "id": 35,
-        "question": "What is the duration per question in a coding round as set by the recruiter?",
-        "options": [
-            "Fixed 1 minute",
-            "Manually set by recruiter",
-            "Fixed 5 minutes",
-            "No time limit"
-        ],
-        "correct_answer": 1,
-        "explanation": "The duration per question in a coding round is manually set by the recruiter (Hyrdragon.pdf, Page 15)."
-    },
-    {
-        "id": 36,
-        "question": "Which cloud provider service is used for scalable compute instances in TAT?",
-        "options": [
-            "AWS EC2",
-            "Azure Blob Storage",
-            "GCP Cloud SQL",
-            "AWS S3"
-        ],
-        "correct_answer": 0,
-        "explanation": "AWS EC2 is used for scalable compute instances in the TAT hosting infrastructure (PRD TAT.ai, Page 10)."
-    },
-    {
-        "id": 37,
-        "question": "What feature allows candidates to track their skill progress in TAT?",
-        "options": [
-            "Skill Tracking",
-            "Resume Analyzer",
-            "Matchmaker",
-            "Dynamic MCQs"
-        ],
-        "correct_answer": 0,
-        "explanation": "Skill Tracking allows candidates to track their progress in acquiring and mastering skills (PRD TAT.ai, Page 5)."
-    },
-    {
-        "id": 38,
-        "question": "What is the purpose of the recruiter dashboard in TAT?",
-        "options": [
-            "Candidate resume storage",
-            "Manage assessments and view results",
-            "Generate AI questions",
-            "Conduct video interviews"
-        ],
-        "correct_answer": 1,
-        "explanation": "The recruiter dashboard is designed to manage assessments and view results (PRD TAT.ai, Page 8)."
-    },
-    {
-        "id": 39,
-        "question": "Which sprint includes pre-sprint planning for TAT?",
-        "options": [
-            "Sprint 0",
-            "Sprint 1",
-            "Sprint 2",
-            "Sprint 3"
-        ],
-        "correct_answer": 0,
-        "explanation": "Sprint 0 (Aug 30 - Sep 1) involves pre-sprint planning to finalize project goals and scope (PRD TAT.ai, Page 12)."
-    },
-    {
-        "id": 40,
-        "question": "What is the file format supported for resume uploads in TAT?",
-        "options": [
-            "PDF only",
-            "PDF, DOC, DOCX",
-            "DOC only",
-            "TXT, PDF, DOC"
-        ],
-        "correct_answer": 1,
-        "explanation": "TAT supports PDF, DOC, and DOCX formats for resume uploads (Hyrdragon.pdf, Page 4)."
-    },
-    {
-        "id": 41,
-        "question": "Which of the following is an operational dependency for TAT?",
-        "options": [
-            "Budget allocation",
-            "Timely beta testing feedback",
-            "Frontend framework selection",
-            "ML model training"
-        ],
-        "correct_answer": 1,
-        "explanation": "Timely feedback from beta testing is an operational dependency for final refinements (PRD TAT.ai, Page 4)."
-    },
-    {
-        "id": 42,
-        "question": "What is the purpose of the AI-Supported Video Interviewing feature?",
-        "options": [
-            "Resume scoring",
-            "Displaying AI-processed questions",
-            "Automated scheduling",
-            "Skill gap analysis"
-        ],
-        "correct_answer": 1,
-        "explanation": "AI-Supported Video Interviewing displays AI-processed questions during video interviews (Hyrdragon.pdf, Page 2)."
-    },
-    {
-        "id": 43,
-        "question": "Which tool is used for CI/CD in the TAT tech stack?",
-        "options": [
-            "Travis CI",
-            "Jenkins",
-            "CircleCI",
-            "Bamboo"
-        ],
-        "correct_answer": 1,
-        "explanation": "Jenkins, GitHub Actions, or GitLab CI/CD are used for CI/CD in the TAT tech stack (PRD TAT.ai, Page 11)."
-    },
-    {
-        "id": 44,
-        "question": "What is the maximum number of applicants supported by CSV upload?",
-        "options": [
-            "500",
-            "1000",
-            "1200",
-            "1500"
-        ],
-        "correct_answer": 2,
-        "explanation": "CSV upload supports up to 1200 applicants (Hyrdragon.pdf, Page 4)."
-    },
-    {
-        "id": 45,
-        "question": "Which sprint is responsible for the Question Generator development?",
-        "options": [
-            "Sprint 1",
-            "Sprint 2",
-            "Sprint 3",
-            "Sprint 4"
-        ],
-        "correct_answer": 2,
-        "explanation": "Sprint 3 (Sep 29 - Oct 12) focuses on developing and integrating the Question Generator (PRD TAT.ai, Page 12)."
-    },
-    {
-        "id": 46,
-        "question": "What type of testing is conducted to ensure TAT components work together?",
-        "options": [
-            "Unit Testing",
-            "Integration Testing",
-            "User Acceptance Testing",
-            "Performance Testing"
-        ],
-        "correct_answer": 1,
-        "explanation": "Integration Testing ensures different TAT components work together seamlessly (PRD TAT.ai, Page 8)."
-    },
-    {
-        "id": 47,
-        "question": "Which feature provides certificates upon assessment completion?",
-        "options": [
-            "Skill Certification",
-            "Skill Tracking",
-            "Resume Analyzer",
-            "Matchmaker"
-        ],
-        "correct_answer": 0,
-        "explanation": "Skill Certification provides certificates or badges upon successful completion of assessments (PRD TAT.ai, Page 5)."
-    },
-    {
-        "id": 48,
-        "question": "What is the focus of Sprint 5 in the TAT roadmap?",
-        "options": [
-            "Resume Analyser",
-            "LMS Integration",
-            "Beta Testing",
-            "Official Launch"
-        ],
-        "correct_answer": 2,
-        "explanation": "Sprint 5 (Nov 10 - Nov 23) involves comprehensive testing and beta launch (PRD TAT.ai, Page 13)."
-    },
-    {
-        "id": 49,
-        "question": "Which security measure is used for secure communication in TAT?",
-        "options": [
-            "Firewall",
-            "SSL/TLS",
-            "VPN",
-            "Intrusion Detection"
-        ],
-        "correct_answer": 1,
-        "explanation": "SSL/TLS is used for secure communication in the TAT tech stack (PRD TAT.ai, Page 11)."
-    },
-    {
-        "id": 50,
-        "question": "What is the role of the Matchmaker in the TAT system?",
-        "options": [
-            "Generates questions",
-            "Compares resumes to job descriptions",
-            "Conducts proctoring",
-            "Manages email notifications"
-        ],
-        "correct_answer": 1,
-        "explanation": "The Matchmaker compares job descriptions with resumes to provide a suitability score (Hyrdragon.pdf, Page 1)."
-    },
-    {
-        "id": 51,
-        "question": "Which of the following is a feature of the TAT recruiter dashboard?",
-        "options": [
-            "Code editor",
-            "Sourcing funnel chart",
-            "Resume upload",
-            "Question generator"
-        ],
-        "correct_answer": 1,
-        "explanation": "The recruiter dashboard includes a sourcing funnel chart with 5 fields (Hyrdragon.pdf, Page 14)."
-    },
-    {
-        "id": 52,
-        "question": "What is the duration of Sprint 6 in the TAT roadmap?",
-        "options": [
-            "Nov 10 - Nov 23",
-            "Nov 24 - Dec 7",
-            "Dec 8 - Dec 15",
-            "Sep 29 - Oct 12"
-        ],
-        "correct_answer": 1,
-        "explanation": "Sprint 6 runs from Nov 24 - Dec 7, focusing on UI/UX finalization (PRD TAT.ai, Page 13)."
-    },
-    {
-        "id": 53,
-        "question": "Which data pipeline tool is mentioned in the TAT tech stack?",
-        "options": [
-            "Apache Spark",
-            "Apache Kafka",
-            "Hadoop",
-            "Flink"
-        ],
-        "correct_answer": 1,
-        "explanation": "Apache Kafka is one of the data pipeline tools mentioned for TAT (PRD TAT.ai, Page 10)."
-    },
-    {
-        "id": 54,
-        "question": "What is the purpose of the Automated Question Generation feature?",
-        "options": [
-            "Resume scoring",
-            "Generating questions based on topics and difficulty",
-            "Conducting video interviews",
-            "Providing real-time feedback"
-        ],
-        "correct_answer": 1,
-        "explanation": "Automated Question Generation creates questions based on topics, number of questions, and difficulty levels (Hyrdragon.pdf, Page 2)."
+        "explanation": "The maximum number of questions for a coding round is 5, as implied by the configuration options (Hyrdragon.pdf, Page 3)."
     },
     {
         "id": 55,
-        "question": "Which sprint involves the official TAT launch?",
+        "question": "What configuration option allows recruiters to set assessment deadlines?",
         "options": [
-            "Sprint 4",
-            "Sprint 5",
-            "Sprint 6",
-            "Sprint 7"
+            "AI Question Generation",
+            "Smart Proctoring",
+            "Deadline and Expiration Date",
+            "Shortlisting Option"
         ],
-        "correct_answer": 3,
-        "explanation": "Sprint 7 (Dec 8 - Dec 15) includes the official launch of TAT (PRD TAT.ai, Page 13)."
+        "correct_answer": 2,
+        "explanation": "Recruiters can set deadlines and expiration dates for assessments (Hyrdragon.pdf, Page 3)."
     },
     {
         "id": 56,
-        "question": "What is the purpose of the Skill-Based Practice Questions feature?",
+        "question": "What is the purpose of the TAT recruiter profile section?",
         "options": [
+            "Proctoring configuration",
+            "Photo upload, company description, and about me",
             "Resume analysis",
-            "Providing practice questions for skills",
-            "Job description creation",
-            "Email management"
+            "Question generation"
         ],
         "correct_answer": 1,
-        "explanation": "Skill-Based Practice Questions generate practice questions aligned with targeted skills (PRD TAT.ai, Page 5)."
+        "explanation": "The recruiter profile includes photo upload, company description, and about me (Hyrdragon.pdf, Page 2)."
     },
     {
         "id": 57,
-        "question": "Which of the following is a component of the TAT candidate journey?",
+        "question": "What does the TAT job sidebar display about job statuses?",
         "options": [
-            "Payroll processing",
-            "Applications, Screened, Shortlisted",
-            "Employee onboarding",
-            "Performance reviews"
+            "Proctoring violations",
+            "Active, inactive, draft, and archive",
+            "Candidate resumes",
+            "Email templates"
         ],
         "correct_answer": 1,
-        "explanation": "The candidate journey includes stages like Applications, Screened, and Shortlisted (Hyrdragon.pdf, Page 2)."
+        "explanation": "The job sidebar shows active, inactive, draft, and archive statuses (Hyrdragon.pdf, Page 2)."
     },
     {
         "id": 58,
-        "question": "What is the role of the UI/UX Designer in the TAT project?",
+        "question": "What is the benefit of TAT’s Matchmaker feature for recruiters?",
         "options": [
-            "Develop ML models",
-            "Design user-friendly interfaces",
-            "Manage infrastructure",
-            "Conduct beta testing"
+            "Better alignment of resumes with job requirements",
+            "Automated proctoring",
+            "Question shuffling",
+            "Email tracking"
         ],
-        "correct_answer": 1,
-        "explanation": "The UI/UX Designer designs user-friendly interfaces to ensure a good user experience (PRD TAT.ai, Page 12)."
+        "correct_answer": 0,
+        "explanation": "Matchmaker ensures better alignment between job requirements and candidate resumes (Hyrdragon.pdf, Page 1)."
     },
     {
         "id": 59,
-        "question": "Which testing tool is used for backend testing in TAT?",
+        "question": "What is the role of the text editor in TAT job creation?",
         "options": [
-            "Jest",
-            "PyTest",
-            "Mocha",
-            "Cypress"
+            "Proctoring setup",
+            "Resume editing",
+            "Writing job descriptions",
+            "Question generation"
         ],
-        "correct_answer": 1,
-        "explanation": "PyTest is used for backend testing in the TAT tech stack (PRD TAT.ai, Page 11)."
+        "correct_answer": 2,
+        "explanation": "A text editor is available for writing job descriptions during job creation (Hyrdragon.pdf, Page 3)."
     },
     {
         "id": 60,
-        "question": "What is the buffer time allocated for TAT's marketing activities?",
+        "question": "What does the TAT Smart Proctoring feature monitor for during assessments?",
         "options": [
-            "1-2 weeks",
-            "2-3 weeks",
-            "3-4 weeks",
-            "4-5 weeks"
+            "Job descriptions",
+            "Face not focused or mismatch",
+            "Resume scores",
+            "Email responses"
         ],
         "correct_answer": 1,
-        "explanation": "A buffer time of 2-3 weeks is allocated for marketing activities and staging work (PRD TAT.ai, Page 13)."
+        "explanation": "Smart Proctoring monitors for face not focused or mismatch, among other features (Hyrdragon.pdf, Page 3)."
     },
     {
         "id": 61,
-        "question": "Which feature allows candidates to upload resumes for skill gap analysis?",
+        "question": "What is the purpose of the question bank in TAT?",
         "options": [
-            "Matchmaker",
-            "Resume Analyzer",
-            "Skill Testing",
-            "Evaluator System"
+            "Providing pre-existing questions for assessments",
+            "Resume storage",
+            "Proctoring configuration",
+            "Email tracking"
         ],
-        "correct_answer": 1,
-        "explanation": "The Resume Analyzer allows candidates to upload resumes for skill gap analysis (PRD TAT.ai, Page 8)."
+        "correct_answer": 0,
+        "explanation": "The question bank provides pre-existing questions for assessment creation (Hyrdragon.pdf, Page 3)."
     },
     {
         "id": 62,
-        "question": "What is the purpose of the Real-Time Image Capture in the Evaluator System?",
+        "question": "What does the TAT application form’s mandatory option allow?",
         "options": [
-            "Resume scoring",
-            "Ensuring fairness via image comparison",
-            "Generating questions",
-            "Scheduling interviews"
+            "Disabling proctoring",
+            "Requiring specific fields like name or email",
+            "Optional resume uploads",
+            "Automatic shortlisting"
         ],
         "correct_answer": 1,
-        "explanation": "Real-Time Image Capture compares images to ensure fairness and prevent cheating (PRD TAT.ai, Page 8)."
+        "explanation": "The mandatory option allows recruiters to require specific fields in the application form (Hyrdragon.pdf, Page 4)."
     },
     {
         "id": 63,
-        "question": "Which of the following is a competitor to TAT?",
+        "question": "What is generated after configuring a TAT application form?",
         "options": [
-            "Zoom",
-            "Mettl",
-            "Slack",
-            "Trello"
+            "Proctoring report",
+            "Resume score",
+            "Application link",
+            "Job description"
         ],
-        "correct_answer": 1,
-        "explanation": "Mettl is listed as a competitor to the TAT system (PRD TAT.ai, Page 7)."
+        "correct_answer": 2,
+        "explanation": "A link is generated after the application form is configured (Hyrdragon.pdf, Page 4)."
     },
     {
         "id": 64,
-        "question": "What is the purpose of the LMS Library Integration in TAT?",
+        "question": "What appears on the TAT recruiter dashboard when a candidate completes a test?",
         "options": [
-            "Resume scoring",
-            "Providing learning materials",
-            "Question generation",
-            "Proctoring"
+            "Resume template",
+            "Notification of test completion",
+            "Job description",
+            "Proctoring settings"
         ],
         "correct_answer": 1,
-        "explanation": "LMS Library Integration provides learning materials for candidates (PRD TAT.ai, Page 5)."
+        "explanation": "Test completion notifications appear on the recruiter dashboard (Hyrdragon.pdf, Page 4)."
     },
     {
         "id": 65,
-        "question": "Which sprint involves comprehensive testing for TAT?",
+        "question": "What score is displayed on the TAT recruiter dashboard after test completion?",
         "options": [
-            "Sprint 3",
-            "Sprint 4",
-            "Sprint 5",
-            "Sprint 6"
+            "Proctoring violation score",
+            "Overall and resume score (e.g., 60%)",
+            "Job suitability score",
+            "Email response score"
         ],
-        "correct_answer": 2,
-        "explanation": "Sprint 5 (Nov 10 - Nov 23) involves comprehensive testing and beta launch (PRD TAT.ai, Page 13)."
+        "correct_answer": 1,
+        "explanation": "The overall score and resume score (e.g., 60%) appear on the dashboard (Hyrdragon.pdf, Page 4)."
     },
     {
         "id": 66,
-        "question": "What is the role of the DevOps Engineer in the TAT project?",
+        "question": "What is included in TAT test details viewed by recruiters?",
         "options": [
-            "Develop AI models",
-            "Manage infrastructure and deployment",
-            "Design UI/UX",
-            "Conduct testing"
+            "Resume format",
+            "Test topics and details",
+            "Candidate salary",
+            "Job location"
         ],
         "correct_answer": 1,
-        "explanation": "The DevOps Engineer manages infrastructure and ensures smooth deployment (PRD TAT.ai, Page 12)."
+        "explanation": "Recruiters can view test topics and details after test completion (Hyrdragon.pdf, Page 4)."
     },
     {
         "id": 67,
-        "question": "Which feature allows recruiters to set a threshold for automated shortlisting?",
+        "question": "What is the purpose of TAT’s AI feedback metrics?",
         "options": [
-            "Smart Proctoring",
-            "Shortlisting Option",
-            "Dynamic MCQs",
-            "Resume Analyzer"
+            "Resume formatting",
+            "Evaluating candidate performance",
+            "Job creation",
+            "Proctoring alerts"
         ],
         "correct_answer": 1,
-        "explanation": "The Shortlisting Option allows recruiters to set a threshold for automated shortlisting (Hyrdragon.pdf, Page 3)."
+        "explanation": "AI feedback metrics evaluate candidate performance in areas like accuracy and time management (Hyrdragon.pdf, Page 4)."
     },
     {
         "id": 68,
-        "question": "Which of the following is a frontend framework option for TAT?",
+        "question": "What is the TAT ranking criteria for candidates with equal marks?",
         "options": [
-            "Django",
-            "React.js",
-            "Flask",
-            "Express.js"
+            "Least time taken ranks higher",
+            "Random selection",
+            "Resume score",
+            "Proctoring compliance"
         ],
-        "correct_answer": 1,
-        "explanation": "React.js or Vue.js are frontend framework options for TAT (PRD TAT.ai, Page 9)."
+        "correct_answer": 0,
+        "explanation": "For equal marks, the candidate with the least time taken ranks higher (Hyrdragon.pdf, Page 5)."
     },
     {
         "id": 69,
-        "question": "What is the purpose of the Performance Analytics feature in TAT?",
+        "question": "What does the TAT candidate login require for existing users?",
         "options": [
-            "Resume extraction",
-            "Assessing assessment effectiveness",
-            "Question generation",
-            "Proctoring"
+            "Resume deletion",
+            "Password",
+            "Job description",
+            "Proctoring setup"
         ],
         "correct_answer": 1,
-        "explanation": "Performance Analytics provides tools to assess the effectiveness of assessments and candidate skills (PRD TAT.ai, Page 5)."
+        "explanation": "Existing candidates log in with a password (Hyrdragon.pdf, Page 5)."
     },
     {
         "id": 70,
-        "question": "Which sprint includes the development of the NLP system?",
+        "question": "What is the role of the TAT resume upload during candidate login?",
         "options": [
-            "Sprint 2",
-            "Sprint 3",
-            "Sprint 4",
-            "Sprint 5"
+            "Email sending",
+            "Triggering Resume Analyzer and Matchmaker",
+            "Proctoring activation",
+            "Job creation"
         ],
-        "correct_answer": 2,
-        "explanation": "Sprint 4 (Oct 13 - Nov 9) includes the development of the NLP system (PRD TAT.ai, Page 12)."
+        "correct_answer": 1,
+        "explanation": "Resume upload during login triggers the Resume Analyzer and Matchmaker (Hyrdragon.pdf, Page 5)."
     },
     {
         "id": 71,
-        "question": "What is the maximum duration per MCQ question in TAT?",
+        "question": "What type of questions can appear in the TAT code compiler?",
         "options": [
-            "30 seconds",
-            "1 minute",
-            "2 minutes",
-            "5 minutes"
+            "Resume-based questions",
+            "Coding questions only",
+            "MCQs only",
+            "Job description questions"
         ],
         "correct_answer": 1,
-        "explanation": "The duration for MCQ questions is 1 minute per question (Hyrdragon.pdf, Page 15)."
+        "explanation": "The code compiler supports coding questions during assessments (Hyrdragon.pdf, Page 5)."
     },
     {
         "id": 72,
-        "question": "Which of the following is a resource dependency for TAT?",
+        "question": "What does TAT’s Smart Proctoring detect besides noise?",
         "options": [
-            "Cloud provider selection",
-            "Availability of skilled personnel",
-            "Beta testing feedback",
-            "NLP library integration"
+            "Face not focused and multi-person detection",
+            "Resume errors",
+            "Job description mismatches",
+            "Email responses"
         ],
-        "correct_answer": 1,
-        "explanation": "Availability of skilled personnel is a resource dependency for TAT (PRD TAT.ai, Page 4)."
+        "correct_answer": 0,
+        "explanation": "Smart Proctoring detects face not focused and multi-person presence, among others (Hyrdragon.pdf, Page 5)."
     },
     {
         "id": 73,
-        "question": "What feature allows candidates to provide feedback on their TAT experience?",
+        "question": "What is the purpose of the TAT for non-technical recruiters?",
         "options": [
-            "Skill Testing",
-            "Assessment Completion",
-            "Resume Analyzer",
-            "Matchmaker"
+            "Creating marketing campaigns",
+            "Evaluating technical candidates",
+            "Managing payroll",
+            "Scheduling meetings"
         ],
         "correct_answer": 1,
-        "explanation": "Candidates can provide ratings and feedback about their experience at assessment completion (Hyrdragon.pdf, Page 5)."
+        "explanation": "TAT helps non-technical recruiters evaluate candidates with technical skills (Hyrdragon.pdf, Page 1)."
     },
     {
         "id": 74,
-        "question": "Which of the following is a TAT candidate screen?",
+        "question": "What is the TAT dashboard’s education insight distribution?",
         "options": [
-            "Recruiter profile",
-            "Upload resume",
-            "Job creation",
-            "Dashboard insights"
+            "High school and college",
+            "Bachelors and Masters",
+            "Certifications only",
+            "Job roles"
         ],
         "correct_answer": 1,
-        "explanation": "Upload resume is a candidate screen in TAT (Hyrdragon.pdf, Page 16)."
+        "explanation": "Education insights show distributions for bachelors and masters degrees (Hyrdragon.pdf, Page 2)."
     },
     {
         "id": 75,
-        "question": "What is the purpose of the Interactive Simulations feature in TAT?",
+        "question": "What is the TAT job creation process’s work type field used for?",
         "options": [
+            "Proctoring setup",
             "Resume scoring",
-            "Offering coding challenges",
-            "Job description creation",
-            "Email notifications"
+            "Specifying job conditions (e.g., remote, on-site)",
+            "Question generation"
         ],
-        "correct_answer": 1,
-        "explanation": "Interactive Simulations offer simulations and coding challenges for real-world problems (PRD TAT.ai, Page 5)."
+        "correct_answer": 2,
+        "explanation": "The work type field specifies job conditions like remote or on-site (Hyrdragon.pdf, Page 3)."
     },
     {
         "id": 76,
-        "question": "Which sprint involves bug fixes based on beta feedback?",
+        "question": "What is the maximum number of resume files supported by TAT?",
         "options": [
-            "Sprint 4",
-            "Sprint 5",
-            "Sprint 6",
-            "Sprint 7"
+            "1500",
+            "1000",
+            "500",
+            "1200"
         ],
-        "correct_answer": 3,
-        "explanation": "Sprint 7 (Dec 8 - Dec 15) involves final adjustments based on beta testing feedback (PRD TAT.ai, Page 13)."
+        "correct_answer": 1,
+        "explanation": "Resume uploads support up to 1000 files (Hyrdragon.pdf, Page 4)."
     },
     {
         "id": 77,
-        "question": "What is the role of the Content Specialist in the TAT project?",
+        "question": "What is the TAT candidate invitation method besides CSV?",
         "options": [
-            "Develop AI models",
-            "Prepare documentation",
-            "Manage infrastructure",
-            "Conduct testing"
+            "Email invite with no limits",
+            "Phone calls",
+            "Social media posts",
+            "In-person invites"
         ],
-        "correct_answer": 1,
-        "explanation": "The Content Specialist prepares documentation and study materials (PRD TAT.ai, Page 12)."
+        "correct_answer": 0,
+        "explanation": "Candidates can be invited via email with no limit on the number of invitations (Hyrdragon.pdf, Page 4)."
     },
     {
         "id": 78,
-        "question": "Which of the following is a TAT recruiter screen change?",
+        "question": "What is the TAT recruiter’s action after candidate application review?",
         "options": [
-            "Add video conferencing",
-            "Remove New response from sourcing funnel",
-            "Add resume upload",
-            "Change question generator"
+            "Generate new questions",
+            "Decide based on candidate information",
+            "Delete candidate data",
+            "Set proctoring thresholds"
         ],
         "correct_answer": 1,
-        "explanation": "The recruiter dashboard change includes removing New response from the sourcing funnel chart (Hyrdragon.pdf, Page 14)."
+        "explanation": "Recruiters decide on candidates based on their application information (Hyrdragon.pdf, Page 4)."
     },
     {
         "id": 79,
-        "question": "What is the purpose of the Automated Scheduling feature in TAT?",
+        "question": "What is the TAT assessment marking information about?",
         "options": [
-            "Resume analysis",
-            "Automate interview bookings",
-            "Generate questions",
-            "Provide feedback"
+            "Proctoring violations",
+            "Ranking criteria like time taken",
+            "Resume scores",
+            "Job salaries"
         ],
         "correct_answer": 1,
-        "explanation": "Automated Scheduling integrates features to automate interview and assessment bookings (PRD TAT.ai, Page 5)."
+        "explanation": "Marking information includes ranking criteria, such as least time taken for equal marks (Hyrdragon.pdf, Page 5)."
     },
     {
         "id": 80,
-        "question": "Which tool is used for version control in TAT?",
+        "question": "What is the TAT’s primary benefit for hiring alignment?",
         "options": [
-            "SVN",
-            "Git",
-            "Mercurial",
-            "Perforce"
+            "Manual assessments",
+            "Better job requirement and candidate capability alignment",
+            "Increasing costs",
+            "Email management"
         ],
         "correct_answer": 1,
-        "explanation": "Git is used for version control with GitHub or GitLab for repository management (PRD TAT.ai, Page 9)."
+        "explanation": "TAT ensures better alignment between job requirements and candidate capabilities (Hyrdragon.pdf, Page 1)."
     },
     {
         "id": 81,
-        "question": "What is the purpose of the Real-Time Feedback feature in TAT?",
+        "question": "What does the TAT Smart Proctoring’s face mismatch detect?",
         "options": [
-            "Resume scoring",
-            "Enhance candidate learning",
-            "Question generation",
-            "Proctoring"
+            "Email issues",
+            "Unauthorized candidates",
+            "Incorrect resumes",
+            "Job description errors"
         ],
         "correct_answer": 1,
-        "explanation": "Real-Time Feedback provides immediate performance feedback to enhance candidate learning (PRD TAT.ai, Page 5)."
+        "explanation": "Face mismatch detection identifies unauthorized candidates during assessments (Hyrdragon.pdf, Page 3)."
     },
     {
         "id": 82,
-        "question": "Which of the following is a TAT candidate screen change?",
+        "question": "What is the TAT recruiter dashboard’s experience distribution insight?",
         "options": [
-            "Add job creation",
-            "Add first name, last name to upload resume page",
-            "Change dashboard layout",
-            "Remove assessment list"
+            "Proctoring violations",
+            "Years of experience",
+            "Candidate locations",
+            "Job roles"
         ],
         "correct_answer": 1,
-        "explanation": "The upload resume page for candidates includes adding first name, last name, and mobile number fields (Hyrdragon.pdf, Page 16)."
+        "explanation": "Experience distribution shows years of candidate experience (Hyrdragon.pdf, Page 2)."
     },
     {
         "id": 83,
-        "question": "What is the role of the Customer Support Specialist in TAT?",
+        "question": "What is the TAT job creation’s years of experience field used for?",
         "options": [
-            "Develop AI models",
-            "Handle user queries during beta and launch",
-            "Design UI/UX",
-            "Conduct testing"
+            "Resume generation",
+            "Specifying required experience",
+            "Proctoring setup",
+            "Email tracking"
         ],
         "correct_answer": 1,
-        "explanation": "The Customer Support Specialist handles user queries during beta and launch (PRD TAT.ai, Page 12)."
+        "explanation": "The years of experience field specifies the required experience for the job role (Hyrdragon.pdf, Page 3)."
     },
     {
         "id": 84,
-        "question": "Which feature allows recruiters to sort candidates by location?",
+        "question": "What is the TAT’s automated shortlisting threshold customizable to?",
         "options": [
-            "Assessment Report",
-            "Recruiter Dashboard",
-            "Talent Pool",
-            "Insights"
+            "Resume score only",
+            "Custom percentage (e.g., 70%)",
+            "Fixed 50%",
+            "Proctoring duration"
         ],
-        "correct_answer": 0,
-        "explanation": "The Assessment Report includes a popup for sorting candidates by location and alphabet (Hyrdragon.pdf, Page 15)."
+        "correct_answer": 1,
+        "explanation": "The automated shortlisting threshold can be customized (e.g., 70%) (Hyrdragon.pdf, Page 3)."
     },
     {
         "id": 85,
-        "question": "What is the purpose of the Skill Endorsements feature in TAT?",
+        "question": "What is the TAT candidate’s action to submit an application?",
         "options": [
-            "Resume scoring",
-            "Allowing recruiters to validate skills",
-            "Question generation",
-            "Proctoring"
+            "Create job description",
+            "Fill details and submit",
+            "Set proctoring",
+            "Delete resume"
         ],
         "correct_answer": 1,
-        "explanation": "Skill Endorsements allow recruiters or mentors to endorse and validate acquired skills (PRD TAT.ai, Page 5)."
+        "explanation": "Candidates fill in details and submit the application form (Hyrdragon.pdf, Page 4)."
     },
     {
         "id": 86,
-        "question": "Which sprint includes the development of the Resume Analyser?",
+        "question": "What is the TAT recruiter’s view of recent jobs on the dashboard?",
         "options": [
-            "Sprint 1",
-            "Sprint 2",
-            "Sprint 3",
-            "Sprint 4"
+            "Visible and clickable to view details",
+            "Hidden until published",
+            "Only archived jobs",
+            "Proctoring logs"
         ],
         "correct_answer": 0,
-        "explanation": "Sprint 1 (Sep 1 - Sep 14) focuses on developing and integrating the Resume Analyser (PRD TAT.ai, Page 12)."
+        "explanation": "Recent jobs are visible and available on the dashboard for recruiters to view (Hyrdragon.pdf, Page 2)."
     },
     {
         "id": 87,
-        "question": "What is the purpose of the Job Creation process in TAT?",
+        "question": "What is the purpose of the TAT Skill Testing feature?",
         "options": [
-            "Resume analysis",
-            "Uploading job details like role and salary",
-            "Generating questions",
-            "Proctoring"
+            "Job description creation",
+            "Assessing various candidate skills",
+            "Email management",
+            "Resume scoring"
         ],
         "correct_answer": 1,
-        "explanation": "Job Creation involves uploading details like job role, location, salary, and job description (Hyrdragon.pdf, Page 3)."
+        "explanation": "Skill Testing assesses various candidate skills through MCQs, coding, and video conferencing (Hyrdragon.pdf, Page 1)."
     },
     {
         "id": 88,
-        "question": "Which of the following is a TAT dashboard insight?",
+        "question": "What does the TAT recruiter dashboard display about ongoing jobs?",
         "options": [
-            "Code editor",
-            "Email insights",
-            "Question generator",
-            "Proctoring"
+            "Proctoring settings",
+            "Total applicants and status",
+            "Resume templates",
+            "Job market trends"
         ],
         "correct_answer": 1,
-        "explanation": "Email insights (sent, responded, unread) are part of the TAT dashboard insights (Hyrdragon.pdf, Page 2)."
+        "explanation": "The dashboard shows total applicants and ongoing job statuses (Hyrdragon.pdf, Page 2)."
     },
     {
         "id": 89,
-        "question": "What is the purpose of the Assessment Guideline screen for candidates?",
+        "question": "What is the TAT’s Smart Proctoring threshold used for?",
         "options": [
-            "Resume upload",
-            "Display timelines and proctoring information",
-            "Generate questions",
-            "Provide feedback"
+            "Resume scoring",
+            "Automated shortlisting",
+            "Question generation",
+            "Email tracking"
         ],
         "correct_answer": 1,
-        "explanation": "The Assessment Guideline screen displays timelines, proctoring information, and marking details (Hyrdragon.pdf, Page 16)."
+        "explanation": "The Smart Proctoring threshold supports automated shortlisting (Hyrdragon.pdf, Page 1)."
     },
     {
         "id": 90,
-        "question": "Which of the following is a TAT technical dependency?",
+        "question": "What is the TAT’s AI-Powered Assessment Feedback focused on?",
         "options": [
-            "Marketing strategy",
-            "LMS Library integration",
-            "Budget allocation",
-            "User training"
+            "Proctoring violations",
+            "Candidate performance metrics",
+            "Job creation",
+            "Resume formatting"
         ],
         "correct_answer": 1,
-        "explanation": "Integration with the LMS Library is a technical dependency for TAT (PRD TAT.ai, Page 3)."
+        "explanation": "AI-Powered Assessment Feedback provides detailed candidate performance metrics (Hyrdragon.pdf, Page 1)."
     },
     {
         "id": 91,
-        "question": "What is the purpose of the Assessment Instruction screen in TAT?",
+        "question": "What is the TAT’s Dynamic MCQs timeframe feature?",
         "options": [
-            "Resume scoring",
-            "Providing test instructions",
-            "Question generation",
-            "Proctoring"
+            "Fixed questions for all",
+            "Different question sets within a timeframe",
+            "No time limits",
+            "Manual question input"
         ],
         "correct_answer": 1,
-        "explanation": "The Assessment Instruction screen provides instructions for candidates before the test (Hyrdragon.pdf, Page 16)."
+        "explanation": "Dynamic MCQs provide different sets of questions within a set timeframe (Hyrdragon.pdf, Page 2)."
     },
     {
         "id": 92,
-        "question": "Which of the following is a feature of the TAT code IDE?",
+        "question": "What is the TAT recruiter login page’s create account option?",
         "options": [
-            "Resume upload",
-            "Multiple questions for a single assessment",
-            "Job description creation",
-            "Email notifications"
+            "Social media only",
+            "Email and password",
+            "Proctoring setup",
+            "Resume upload"
         ],
         "correct_answer": 1,
-        "explanation": "The Assessment Code IDE supports multiple questions for a single assessment and displays a timer (Hyrdragon.pdf, Page 16)."
+        "explanation": "The login page allows account creation with email and password (Hyrdragon.pdf, Page 2)."
     },
     {
         "id": 93,
-        "question": "What is the role of the Marketing Specialist in the TAT project?",
+        "question": "What does the TAT recruiter dashboard’s resume score insight show?",
         "options": [
-            "Develop AI models",
-            "Plan and execute marketing strategy",
-            "Design UI/UX",
-            "Conduct testing"
+            "Proctoring violations",
+            "Resume adherence to standards",
+            "Job salary ranges",
+            "Email responses"
         ],
         "correct_answer": 1,
-        "explanation": "The Marketing Specialist plans and executes the marketing strategy for the MVP launch (PRD TAT.ai, Page 12)."
+        "explanation": "The resume score insight shows adherence to industry standards (Hyrdragon.pdf, Page 2)."
     },
     {
         "id": 94,
-        "question": "Which of the following is a TAT recruiter screen?",
+        "question": "What is the TAT job creation’s location field used for?",
         "options": [
-            "Assessment Code IDE",
-            "Recruiter Dashboard",
-            "Upload resume",
-            "Assessment Guideline"
+            "Proctoring setup",
+            "Specifying job location",
+            "Resume scoring",
+            "Question generation"
         ],
         "correct_answer": 1,
-        "explanation": "The Recruiter Dashboard is a recruiter screen in TAT (Hyrdragon.pdf, Page 14)."
+        "explanation": "The location field specifies the job’s location (Hyrdragon.pdf, Page 3)."
     },
     {
         "id": 95,
-        "question": "What is the purpose of the Talent Pool in TAT?",
+        "question": "What is the TAT’s question type configuration for assessments?",
         "options": [
-            "Resume scoring",
-            "Managing candidate data",
-            "Question generation",
-            "Proctoring"
+            "Resume-based only",
+            "Easy, Medium, Hard with number and duration",
+            "Proctoring thresholds",
+            "Email templates"
         ],
         "correct_answer": 1,
-        "explanation": "The Talent Pool is used for managing candidate data (Hyrdragon.pdf, Page 15)."
+        "explanation": "Question types are configured as Easy, Medium, or Hard with number and duration (Hyrdragon.pdf, Page 3)."
     },
     {
         "id": 96,
-        "question": "Which sprint involves user training and support preparation?",
+        "question": "What is the TAT’s candidate application form review process?",
         "options": [
-            "Sprint 4",
-            "Sprint 5",
-            "Sprint 6",
-            "Sprint 7"
+            "Automatic deletion",
+            "Recruiter decision based on information",
+            "Proctoring activation",
+            "Question generation"
         ],
-        "correct_answer": 3,
-        "explanation": "Sprint 7 (Dec 8 - Dec 15) includes preparing user training and support materials (PRD TAT.ai, Page 9)."
+        "correct_answer": 1,
+        "explanation": "Recruiters review and decide based on candidate application information (Hyrdragon.pdf, Page 4)."
     },
     {
         "id": 97,
-        "question": "What is the purpose of the Email Insights feature in TAT?",
+        "question": "What is the TAT’s test completion notification process?",
         "options": [
-            "Resume analysis",
-            "Tracking email status (sent, responded, unread)",
-            "Question generation",
-            "Proctoring"
+            "Email to candidates only",
+            "Displayed on recruiter dashboard",
+            "Proctoring log update",
+            "Resume deletion"
         ],
         "correct_answer": 1,
-        "explanation": "Email Insights tracks email status (sent, responded, unread) on the dashboard (Hyrdragon.pdf, Page 2)."
+        "explanation": "Test completion notifications appear on the recruiter dashboard (Hyrdragon.pdf, Page 4)."
     },
     {
         "id": 98,
-        "question": "Which of the following is a TAT candidate screen?",
+        "question": "What is the TAT’s assessment guideline’s marking detail?",
         "options": [
-            "Recruiter profile",
-            "Assessment Completion",
-            "Job creation",
-            "Dashboard insights"
+            "Proctoring violations",
+            "Least time taken for equal marks",
+            "Resume scores",
+            "Job salaries"
         ],
         "correct_answer": 1,
-        "explanation": "Assessment Completion is a candidate screen in TAT (Hyrdragon.pdf, Page 16)."
+        "explanation": "Marking details include least time taken for equal marks ranking (Hyrdragon.pdf, Page 5)."
     },
     {
         "id": 99,
-        "question": "What is the purpose of the Feedback Loop in TAT?",
+        "question": "What is the TAT’s candidate feedback process after assessment?",
         "options": [
-            "Resume scoring",
-            "Informing assessment improvements",
-            "Question generation",
-            "Proctoring"
+            "Proctoring setup",
+            "Ratings and feedback submission",
+            "Resume deletion",
+            "Job creation"
         ],
         "correct_answer": 1,
-        "explanation": "The Feedback Loop uses skill-based learning outcomes to inform assessment improvements (PRD TAT.ai, Page 6)."
+        "explanation": "Candidates can submit ratings and feedback after completing assessments (Hyrdragon.pdf, Page 5)."
     },
     {
         "id": 100,
-        "question": "Which of the following is a TAT resource allocation role?",
+        "question": "What is the TAT’s Smart Proctoring’s multi-person detection for?",
         "options": [
-            "Customer Support Specialist",
-            "External Consultant",
-            "Third-Party Vendor",
-            "Beta Tester"
+            "Resume scoring",
+            "Detecting unauthorized individuals",
+            "Email tracking",
+            "Question generation"
         ],
-        "correct_answer": 0,
-        "explanation": "The Customer Support Specialist is a resource allocation role for handling user queries (PRD TAT.ai, Page 12)."
+        "correct_answer": 1,
+        "explanation": "Multi-person detection identifies unauthorized individuals during assessments (Hyrdragon.pdf, Page 1)."
     }
 ]
 
